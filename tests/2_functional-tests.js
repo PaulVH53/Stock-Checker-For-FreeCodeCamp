@@ -30,7 +30,7 @@ suite("Functional Tests", function () {
             .end(function (err, res) {
                 assert.equal(res.status, 200);
                 assert.equal(res.body.stockData.stock, "GOLD");
-                assert.equal(res.body.stockData.likes, 2);
+                assert.equal(res.body.stockData.likes, 1);
                 assert.exists(res.body.stockData.price, "GOLD has a price");
                 done();
             });
@@ -45,7 +45,7 @@ suite("Functional Tests", function () {
             .end(function (err, res) {
                 assert.equal(res.status, 200);
                 assert.equal(res.body.stockData.stock, "GOLD");
-                assert.equal(res.body.stockData.likes, 2);
+                assert.equal(res.body.stockData.likes, 1);
                 assert.exists(res.body.stockData.price, "GOLD has a price");
                 done();
             });
